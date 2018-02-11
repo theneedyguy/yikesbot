@@ -27,6 +27,6 @@
 
 ### Added
 
-- Added all features (Initial Github Version)
+- Added all features
 - Admin Commands
 - Default Commands
