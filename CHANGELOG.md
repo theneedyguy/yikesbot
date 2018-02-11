@@ -17,13 +17,13 @@
 
 - Removed some comments
 
-## [1.4.0]() - 2018-02-09
+## 1.4.0 - 2018-02-09
 
 ### Added
 
 - New admin command: **!topyikes** (Shows the highest yikes level ever achieved since starting the bot)
 
-## [1.3.0]() - 2018-02-09
+## 1.3.0 - 2018-02-09
 
 ### Added
 
