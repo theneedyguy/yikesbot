@@ -2,7 +2,7 @@
 
 ## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.5.0...HEAD)
 
-## [1.5.0](https://github.com/theneedyguy/yikesbot/compare/v1.4.0...v1.5.0) - 2018-02-11
+## [1.5.0](https://github.com/theneedyguy/yikesbot/tree/v1.5.0) - 2018-02-11
 
 ### Added
 
@@ -17,13 +17,13 @@
 
 - Removed some comments
 
-## [1.4.0](https://github.com/theneedyguy/yikesbot/compare/v1.3.0...v1.4.0) - 2018-02-09
+## [1.4.0]() - 2018-02-09
 
 ### Added
 
 - New admin command: **!topyikes** (Shows the highest yikes level ever achieved since starting the bot)
 
-## [1.3.0](https://github.com/theneedyguy/yikesbot/tree/v1.3.0) - 2018-02-09
+## [1.3.0]() - 2018-02-09
 
 ### Added
 
