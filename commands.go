@@ -45,8 +45,20 @@ func handleCommand(m dggchat.Message, s *dggchat.Session) {
 
 	if strings.HasPrefix(m.Message, "!ipban") {
 		if strings.EqualFold("Destiny", m.Sender.Nick) {
-			raiseYikesLevel(100)
-			_ = s.SendMessage("Yikes increased by 100.")
+
+			switch ipbanMessage {
+			case 0:
+				_ = s.SendMessage("Yikes increased by 100.")
+				raiseYikesLevel(100)
+				ipbanMessage = 1
+			case 1:
+				_ = s.SendMessage("Ban! 100 added to yikes-o-meter.")
+				ipbanMessage = 0
+			default:
+				_ = s.SendMessage("Ban! 100 added to yikes-o-meter.")
+				ipbanMessage = 0
+			}
+
 		}
 	}
 

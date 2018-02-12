@@ -21,9 +21,10 @@ const (
 var (
 	yikesCommands      = []string{"!yikes", "!YIKES", "! yikes", "! YIKES", "!yikers", "!YIKERS"}
 	lastMessage        = ""
-	yikesVersion       = "1.5-market"
+	yikesVersion       = "1.5.1"
 	yikesLevel         = 0
 	yikesMessage       = 0
+	ipbanMessage       = 0
 	yikesSleep         = false
 	yikesTop           = 0
 	lastOmegaYikes     = time.Now()
