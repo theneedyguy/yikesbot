@@ -21,7 +21,7 @@ const (
 var (
 	yikesCommands      = []string{"!yikes", "!YIKES", "! yikes", "! YIKES", "!yikers", "!YIKERS"}
 	lastMessage        = ""
-	yikesVersion       = "1.5"
+	yikesVersion       = "1.5-market"
 	yikesLevel         = 0
 	yikesMessage       = 0
 	yikesSleep         = false
