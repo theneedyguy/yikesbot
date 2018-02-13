@@ -18,7 +18,7 @@ Expected variations of "yikes" the bot currently processes:
 
 - omegayikes
 
-Typing omegayikes increases the current amount by 50 but has a cooldown of 60 seconds before can be used again.
+Typing omegayikes increases the current amount by 50 but has a cooldown of 60 seconds before it can be used again.
 
 ## Commands
 
