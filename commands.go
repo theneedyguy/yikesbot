@@ -48,7 +48,7 @@ func handleCommand(m dggchat.Message, s *dggchat.Session) {
 
 			switch ipbanMessage {
 			case 0:
-				_ = s.SendMessage("Yikes increased by 100.")
+				_ = s.SendMessage("Yikes increased by 100 due to ban.")
 				raiseYikesLevel(100)
 				ipbanMessage = 1
 			case 1:
