@@ -2,6 +2,12 @@
 
 ## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.6.1...HEAD)
 
+## [1.7](https://github.com/theneedyguy/yikesbot/compare/v1.6.1...v1.7.0) - 2018-02-15
+
+### Added
+
+- Added Prometheus metrics endpoint for time series data. Will be used for graphing yikes level over time.
+
 ## [1.6.1](https://github.com/theneedyguy/yikesbot/compare/v1.6.0...v1.6.1) - 2018-02-15
 
 ### Added

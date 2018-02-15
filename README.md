@@ -50,6 +50,13 @@ Currently theneedyguy and LeEpicMemeXd are admins of the bot and can thus execut
 | **!ipban**    | Increases the counter by 100 (Triggered only when Destiny bans someone) |
 | **!topyikes** | Shows the highest yikes level ever achieved since starting the bot      |
 
+## Metrics
+
+Since version 1.7 yikesbot exposes Prometheus time series data on port 9998. This is only relevant for people that know what Prometheus is and what it is used for.
+Metric label:
+
+- dgg_yikes_level
+
 ## Changelog
 
 [Changelogs are here](https://github.com/theneedyguy/yikesbot/blob/master/CHANGELOG.md)
