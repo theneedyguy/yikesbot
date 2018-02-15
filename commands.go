@@ -23,7 +23,7 @@ func handleCommand(m dggchat.Message, s *dggchat.Session) {
 		}
 	}
 
-	if strings.HasPrefix(m.Message, "!yikesgraph") {
+	if strings.HasPrefix(m.Message, "!graphyikes") {
 		timeElapsed := time.Since(lastSent)
 		if timeElapsed < messageInterval {
 			return

@@ -1,6 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.7.1...HEAD)
+## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.7.2...HEAD)
+
+## [1.7.2](https://github.com/theneedyguy/yikesbot/compare/v1.7.1...v1.7.2) - 2018-02-15
+
+### Changes
+
+- Fixes graph command
 
 ## [1.7.1](https://github.com/theneedyguy/yikesbot/compare/v1.7.0...v1.7.1) - 2018-02-15
 
