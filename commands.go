@@ -45,18 +45,23 @@ func handleCommand(m dggchat.Message, s *dggchat.Session) {
 
 	if strings.HasPrefix(m.Message, "!ipban") {
 		if strings.EqualFold("Destiny", m.Sender.Nick) {
-
+			//fmt.Println("IPBAN DETECTED!")
 			switch ipbanMessage {
 			case 0:
-				_ = s.SendMessage("Yikes increased by 100.")
+				_ = s.SendMessage("Yikes increased by 100 due to ban.")
 				raiseYikesLevel(100)
-				ipbanMessage = 1
+				//fmt.Println("IP1")
+				ipbanMessage = ipbanMessage + 1
 			case 1:
 				_ = s.SendMessage("Ban! 100 added to yikes-o-meter.")
-				ipbanMessage = 0
+				raiseYikesLevel(100)
+				//fmt.Println("IP2")
+				ipbanMessage = ipbanMessage - 1
 			default:
 				_ = s.SendMessage("Ban! 100 added to yikes-o-meter.")
+				raiseYikesLevel(100)
 				ipbanMessage = 0
+				//fmt.Println("IPDEF")
 			}
 
 		}
@@ -177,9 +182,27 @@ func handleYikesCommand(m dggchat.Message, s *dggchat.Session) {
 		}
 	*/
 	if yikesSleep == false {
-		err = s.SendMessage(fmt.Sprintf("%s WhoahDude", ylevel))
-		if err != nil {
-			return
+		switch {
+		case yikesLevel < 100:
+			err = s.SendMessage(fmt.Sprintf("%s SLEEPSTINY", ylevel))
+			if err != nil {
+				return
+			}
+		case yikesLevel > 100 && yikesLevel < 500:
+			err = s.SendMessage(fmt.Sprintf("%s Memegasm", ylevel))
+			if err != nil {
+				return
+			}
+		case yikesLevel > 500 && yikesLevel < 1000:
+			err = s.SendMessage(fmt.Sprintf("%s WhoahDude", ylevel))
+			if err != nil {
+				return
+			}
+		case yikesLevel > 1000:
+			err = s.SendMessage(fmt.Sprintf("%s GODSTINY", ylevel))
+			if err != nil {
+				return
+			}
 		}
 	} else {
 		err = s.SendMessage(fmt.Sprintf("%s I am sleeping until awakened by my master.", "SLEEPSTINY"))

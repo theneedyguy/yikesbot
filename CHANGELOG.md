@@ -2,6 +2,24 @@
 
 ## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.5.0...HEAD)
 
+## [1.6](https://github.com/theneedyguy/yikesbot/tree/v1.6) - 2018-02-15
+
+### Changed
+
+- When outputting the yikes level the emote will vary depending on the amount of the current yikes.
+
+## [1.5.1-2](https://github.com/theneedyguy/yikesbot/tree/v1.5.1-2) - 2018-02-14
+
+### Changed
+
+- Fixed problems with ipban not getting detected.
+
+## [1.5.1](https://github.com/theneedyguy/yikesbot/tree/v1.5.1) - 2018-02-14
+
+### Added
+
+- Different messages when Destiny bans someone. Prevents duplicate message error.
+
 ## [1.5.0](https://github.com/theneedyguy/yikesbot/tree/v1.5.0) - 2018-02-11
 
 ### Added
