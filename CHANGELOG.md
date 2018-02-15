@@ -1,20 +1,31 @@
 # Changelog
 
-## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.5.0...HEAD)
+## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.6.1...HEAD)
 
-## [1.6](https://github.com/theneedyguy/yikesbot/tree/v1.6) - 2018-02-15
+## [1.6.1](https://github.com/theneedyguy/yikesbot/compare/v1.6.0...v1.6.1) - 2018-02-15
+
+### Added
+
+- "Yikerz" is now recognized by the bot.
+
+### Changed
+
+- Got rid of some excess code.
+- Yikes are recognized regardless of the capitalization
+
+## [1.6](https://github.com/theneedyguy/yikesbot/compare/v1.5.0...v1.6.0) - 2018-02-15
 
 ### Changed
 
 - When outputting the yikes level the emote will vary depending on the amount of the current yikes.
 
-## [1.5.1-2](https://github.com/theneedyguy/yikesbot/tree/v1.5.1-2) - 2018-02-14
+## 1.5.1-2 - 2018-02-14
 
 ### Changed
 
 - Fixed problems with ipban not getting detected.
 
-## [1.5.1](https://github.com/theneedyguy/yikesbot/tree/v1.5.1) - 2018-02-14
+## 1.5.1- 2018-02-14
 
 ### Added
 
