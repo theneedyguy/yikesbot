@@ -56,5 +56,3 @@ Currently theneedyguy and LeEpicMemeXd are admins of the bot and can thus execut
 
 - Some kind of "buy" function for yikes. Will require a database or just a local json that gets updated. We'll see what I can come up with.
 The buy function would come with a cooldown. The first person to buy yikes would get them. A leaderboard would be a nice meme.
-
-- Use different phrases for ipban message.

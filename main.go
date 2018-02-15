@@ -21,7 +21,7 @@ const (
 var (
 	yikesCommands      = []string{"!yikes", "!YIKES", "! yikes", "! YIKES", "!yikers", "!YIKERS"}
 	lastMessage        = ""
-	yikesVersion       = "1.5.1"
+	yikesVersion       = "1.6"
 	yikesLevel         = 0
 	yikesMessage       = 0
 	ipbanMessage       = 0
