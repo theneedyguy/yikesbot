@@ -24,7 +24,7 @@ Typing omegayikes increases the current amount by 50 but has a cooldown of 60 se
 
 ### New since Version 1.7.1
 
-- !yikesgraph links to a graphical overview that displays the yikes amount over time.
+- !graphyikes links to a graphical overview that displays the yikes amount over time.
 
 ## Commands
 
