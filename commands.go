@@ -23,6 +23,25 @@ func handleCommand(m dggchat.Message, s *dggchat.Session) {
 		}
 	}
 
+	if strings.HasPrefix(m.Message, "!yikesgraph") {
+		timeElapsed := time.Since(lastSent)
+		if timeElapsed < messageInterval {
+			return
+		}
+		switch graphMessage {
+		case 0:
+			_ = s.SendMessage(fmt.Sprintf("Graphical Yikes: %s DANKMEMES", graphURL))
+			graphMessage = graphMessage + 1
+		case 1:
+			_ = s.SendMessage(fmt.Sprintf("Yikes Graph: %s DANKMEMES", graphURL))
+			graphMessage = graphMessage - 1
+		default:
+			_ = s.SendMessage(fmt.Sprintf("Graphical Yikes: %s DANKMEMES", graphURL))
+			graphMessage = graphMessage + 1
+		}
+		lastSent = time.Now()
+	}
+
 	if strings.HasPrefix(m.Message, "!topyikes") {
 		if isAdmin(m.Sender.Nick) {
 			_ = s.SendMessage(fmt.Sprintf("Highest recorded yikes level (since starting the bot): %s", strconv.Itoa(yikesTop)))

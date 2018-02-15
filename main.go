@@ -22,10 +22,11 @@ const (
 var (
 	yikesCommands      = []string{"!yikes", "!YIKES", "! yikes", "! YIKES", "!yikers", "!YIKERS"}
 	lastMessage        = ""
-	yikesVersion       = "1.7"
+	yikesVersion       = "1.7.1"
 	yikesLevel         = 0
 	yikesMessage       = 0
 	ipbanMessage       = 0
+	graphMessage       = 0
 	yikesSleep         = false
 	yikesTop           = 0
 	lastOmegaYikes     = time.Now()
@@ -39,6 +40,7 @@ var (
 	pmInterval         = time.Second * 30
 	configFile         string
 	admins             []string
+	graphURL           string
 	key                string
 	yikesMetric        = prometheus.NewGauge(prometheus.GaugeOpts{
 		Name: "dgg_yikes_level",
@@ -50,6 +52,7 @@ type (
 	config struct {
 		Key    string   `json:"login_key"`
 		Admins []string `json:"admins"`
+		Graph  string   `json:"graph"`
 	}
 
 	apiResp struct {
@@ -89,6 +92,12 @@ func main() {
 	}
 
 	admins = c.Admins
+
+	if c.Graph == "" {
+		log.Fatalln("No Graph URL provided")
+	}
+
+	graphURL = c.Graph
 
 	go startBot(c.Key)
 	go runMetrics()
