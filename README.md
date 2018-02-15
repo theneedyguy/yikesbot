@@ -22,12 +22,6 @@ Capitalization is not important. Any of the above words can be spelled as you wi
 
 Typing omegayikes increases the current amount by 50 but has a cooldown of 60 seconds before it can be used again.
 
-### New since Version 1.5
-
-- omegayikes
-
-Typing omegayikes increases the current amount by 50 but has a cooldown of 60 seconds before it can be used again.
-
 ## Commands
 
 Currently everyone in chat can get the current yikes count by typing the following commands:
