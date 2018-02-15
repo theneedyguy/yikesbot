@@ -21,7 +21,7 @@ const (
 var (
 	yikesCommands      = []string{"!yikes", "!YIKES", "! yikes", "! YIKES", "!yikers", "!YIKERS"}
 	lastMessage        = ""
-	yikesVersion       = "1.6"
+	yikesVersion       = "1.6.1"
 	yikesLevel         = 0
 	yikesMessage       = 0
 	ipbanMessage       = 0
@@ -127,15 +127,13 @@ func startBot(key string) {
 	for {
 		select {
 		case m := <-messages:
-			if strings.Contains(m.Message, "omegayikes") ||
-				strings.Contains(m.Message, "OMEGAYIKES") {
+			if strings.Contains(strings.ToLower(m.Message), "omegayikes") {
 				omegaYikes()
 			}
-			if strings.Contains(m.Message, "YIKES") ||
-				strings.Contains(m.Message, "Y I K E S") ||
-				strings.Contains(m.Message, "yikes") ||
-				strings.Contains(m.Message, "yikers") ||
-				strings.Contains(m.Message, "YIKERS") {
+			if strings.Contains(strings.ToLower(m.Message), "yikes") ||
+				strings.Contains(strings.ToLower(m.Message), "y i k e s") ||
+				strings.Contains(strings.ToLower(m.Message), "yikers") ||
+				strings.Contains(strings.ToLower(m.Message), "yikerz") {
 				raiseYikesLevel(10)
 			}
 			if strings.HasPrefix(m.Message, "!") {

@@ -102,10 +102,9 @@ func toggleSleep() bool {
 	if yikesSleep == false {
 		yikesSleep = true
 		return true
-	} else {
-		yikesSleep = false
-		return false
 	}
+	yikesSleep = false
+	return false
 }
 
 func getYikesLevel() (string, error) {

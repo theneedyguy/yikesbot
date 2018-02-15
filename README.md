@@ -8,11 +8,13 @@ yikesbot listenes for a defined variation of the word "yikes" in a chat message 
 
 Expected variations of "yikes" the bot currently processes:
 
-- YIKES
+
+- Yikes
 - Y I K E S
-- yikes
-- yikers
-- YIKERS
+- Yikerz
+- Yikers
+
+Capitalization is not important. Any of the above words can be spelled as you wish.
 
 ### New since Version 1.5
 
