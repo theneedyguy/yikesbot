@@ -1,6 +1,13 @@
 # Changelog
 
-## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.6.1...HEAD)
+## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.7.1...HEAD)
+
+## [1.7.1](https://github.com/theneedyguy/yikesbot/compare/v1.7.0...v1.7.1) - 2018-02-15
+
+### Added
+
+- Command to link to graphical overview
+- URL to graphical overview is configured via the config file
 
 ## [1.7](https://github.com/theneedyguy/yikesbot/compare/v1.6.1...v1.7.0) - 2018-02-15
 

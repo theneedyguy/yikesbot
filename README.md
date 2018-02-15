@@ -22,6 +22,10 @@ Capitalization is not important. Any of the above words can be spelled as you wi
 
 Typing omegayikes increases the current amount by 50 but has a cooldown of 60 seconds before it can be used again.
 
+### New since Version 1.7.1
+
+- !yikesgraph links to a graphical overview that displays the yikes amount over time.
+
 ## Commands
 
 Currently everyone in chat can get the current yikes count by typing the following commands:
@@ -41,14 +45,14 @@ Cooldown of the command is currently set to 10 seconds
 
 Currently theneedyguy and LeEpicMemeXd are admins of the bot and can thus execute the following commands:
 
-| Command       | Effect                                                                  |
-| ----------    |:----------------------------------------------------------------------- |
-| **!ver**      | Displays current version of yikesbot                                    |
-| **!reset**    | Resets the yikes counter                                                |
-| **!sleep**    | Toggles Sleep Mode (Bot stops responding to !yikes)                     |
-| **!ping**     | Sends back a pong (Check if bot is alive)                               |
-| **!ipban**    | Increases the counter by 100 (Triggered only when Destiny bans someone) |
-| **!topyikes** | Shows the highest yikes level ever achieved since starting the bot      |
+| Command         | Effect                                                                  |
+| ----------      |:----------------------------------------------------------------------- |
+| **!ver**        | Displays current version of yikesbot                                    |
+| **!reset**      | Resets the yikes counter                                                |
+| **!sleep**      | Toggles Sleep Mode (Bot stops responding to !yikes)                     |
+| **!ping**       | Sends back a pong (Check if bot is alive)                               |
+| **!ipban**      | Increases the counter by 100 (Triggered only when Destiny bans someone) |
+| **!topyikes**   | Shows the highest yikes level ever achieved since starting the bot      |
 
 ## Metrics
 
