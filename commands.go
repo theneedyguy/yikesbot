@@ -148,6 +148,7 @@ func decreaseYikesOverTime() {
 		if yikesLevel != 0 {
 			yikesLevel = yikesLevel - 1
 		}
+		yikesMetric.Set(float64(yikesLevel))
 		time.Sleep(time.Second * 2)
 	}
 }

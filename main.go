@@ -10,6 +10,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/prometheus/client_golang/prometheus"
 	"github.com/voloshink/dggchat"
 )
 
@@ -21,7 +22,7 @@ const (
 var (
 	yikesCommands      = []string{"!yikes", "!YIKES", "! yikes", "! YIKES", "!yikers", "!YIKERS"}
 	lastMessage        = ""
-	yikesVersion       = "1.6.1"
+	yikesVersion       = "1.7"
 	yikesLevel         = 0
 	yikesMessage       = 0
 	ipbanMessage       = 0
@@ -39,6 +40,10 @@ var (
 	configFile         string
 	admins             []string
 	key                string
+	yikesMetric        = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "dgg_yikes_level",
+		Help: "Current Yikes Level",
+	})
 )
 
 type (
@@ -86,6 +91,7 @@ func main() {
 	admins = c.Admins
 
 	go startBot(c.Key)
+	go runMetrics()
 	go decreaseYikesOverTime()
 
 	sc := make(chan os.Signal, 1)
