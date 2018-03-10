@@ -28,6 +28,8 @@ Typing omegayikes increases the current amount by 50 but has a cooldown of 60 se
 
 ## Commands
 
+## **UPDATE**: Yikesbot got banned and is now only operating in stealth mode... No more !yikes
+
 Currently everyone in chat can get the current yikes count by typing the following commands:
 
 - !yikes

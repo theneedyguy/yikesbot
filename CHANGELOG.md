@@ -1,6 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.7.2...HEAD)
+## [Unreleased](https://github.com/theneedyguy/yikesbot/compare/v1.7.3...HEAD)
+
+## [1.7.3](https://github.com/theneedyguy/yikesbot/compare/v1.7.2...v1.7.3) - 2018-03-10
+
+### Changes
+
+- Stealth mode due to ban... Only counts yikes never reacts to the command.
 
 ## [1.7.2](https://github.com/theneedyguy/yikesbot/compare/v1.7.1...v1.7.2) - 2018-02-15
 

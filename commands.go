@@ -12,7 +12,7 @@ import (
 func handleCommand(m dggchat.Message, s *dggchat.Session) {
 
 	if isYikesCommand(m.Message) {
-		handleYikesCommand(m, s)
+		//handleYikesCommand(m, s)
 		return
 	}
 
@@ -22,26 +22,26 @@ func handleCommand(m dggchat.Message, s *dggchat.Session) {
 			_ = s.SendMessage("YIKER-COUNTER RESET FeelsBadMan")
 		}
 	}
-
-	if strings.HasPrefix(m.Message, "!graphyikes") {
-		timeElapsed := time.Since(lastSent)
-		if timeElapsed < messageInterval {
-			return
+	/*
+		if strings.HasPrefix(m.Message, "!graphyikes") {
+			timeElapsed := time.Since(lastSent)
+			if timeElapsed < messageInterval {
+				return
+			}
+			switch graphMessage {
+			case 0:
+				_ = s.SendMessage(fmt.Sprintf("Graphical Yikes: %s DANKMEMES", graphURL))
+				graphMessage = graphMessage + 1
+			case 1:
+				_ = s.SendMessage(fmt.Sprintf("Yikes Graph: %s DANKMEMES", graphURL))
+				graphMessage = graphMessage - 1
+			default:
+				_ = s.SendMessage(fmt.Sprintf("Graphical Yikes: %s DANKMEMES", graphURL))
+				graphMessage = graphMessage + 1
+			}
+			lastSent = time.Now()
 		}
-		switch graphMessage {
-		case 0:
-			_ = s.SendMessage(fmt.Sprintf("Graphical Yikes: %s DANKMEMES", graphURL))
-			graphMessage = graphMessage + 1
-		case 1:
-			_ = s.SendMessage(fmt.Sprintf("Yikes Graph: %s DANKMEMES", graphURL))
-			graphMessage = graphMessage - 1
-		default:
-			_ = s.SendMessage(fmt.Sprintf("Graphical Yikes: %s DANKMEMES", graphURL))
-			graphMessage = graphMessage + 1
-		}
-		lastSent = time.Now()
-	}
-
+	*/
 	if strings.HasPrefix(m.Message, "!topyikes") {
 		if isAdmin(m.Sender.Nick) {
 			_ = s.SendMessage(fmt.Sprintf("Highest recorded yikes level (since starting the bot): %s", strconv.Itoa(yikesTop)))
