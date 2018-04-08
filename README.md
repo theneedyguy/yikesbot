@@ -1,4 +1,4 @@
-# yikesbot
+# yikesbot (Abandoned because of IP-Ban?)
 
 **yikesbot** is a Destiny.gg chat bot that has an integrated "yikes" counter that increases every time it detects a variation of the word "yikes" in a chat message. It is heavily inspired by the [RandomFerret](https://github.com/voloshink/FerretBot) bot made by **Polecat** in chat. Most of his existing code was used in creating this bot.
 
